@@ -4,17 +4,18 @@
 Ext.define('MyApp.view.users.userGrid', {
     extend: 'Ext.grid.Panel',
     xtype: 'userGrid',
-
-    requires: [
-        'MyApp.store.users.user',
-    ],
-    controller: 'Grid',
-
-
     title: 'UserDetails',
-
+    controller: 'Grid',
+    id:'userGrid_list',
+    /*requires: [
+        'MyApp.store.users.user',
+    ],*/
+    
+    viewModel: {
+        type: 'userGrid'
+    },
     /*bind: {
-            store:'users.user'
+            store: '{users.user}'
         },*/
 
     store: {
@@ -28,21 +29,21 @@ Ext.define('MyApp.view.users.userGrid', {
         xtype: 'rownumberer',
     },
     {
-        text: 'id',
+        text: 'Id',
         dataIndex: 'id'
     },
     {
-        text: 'firstname',
-        dataIndex: 'firstName'
+        text: 'FirstName',
+        dataIndex: 'firstname'
 
     },
     {
         text: 'MiddleName',
-        dataIndex: 'middleName'
+        dataIndex: 'middlename'
     },
     {
         text: 'LastName',
-        dataIndex: 'lastName'
+        dataIndex: 'lastname'
     },
     {
         text: 'Age',

@@ -16,30 +16,30 @@ Ext.define('MyApp.view.users.usersFormWindow', {
         items: [{
             xtype: 'numberfield',
             anchor: '100%',
-            name: 'Id',
-            fieldLabel: 'User Id',
+            name: 'id',
+            fieldLabel: 'Id',
             allowBlank: false,
             minLength: '2',
         },
         {
             xtype: 'textfield',
-            fieldLabel: 'First Name',
-            name: 'firstName',
+            fieldLabel: 'FirstName',
+            name: 'firstname',
             allowBlank: false,
             minLength: '3'
 
         },
         {
             xtype: 'textfield',
-            fieldLabel: 'Middle Name',
-            name: 'middleName',
+            fieldLabel: 'MiddleName',
+            name: 'middlename',
             allowBlank: false,
             minLength: '3'
         },
         {
             xtype: 'textfield',
-            fieldLabel: 'Last Name',
-            name: 'lastName',
+            fieldLabel: 'LastName',
+            name: 'lastname',
             allowBlank: false,
             minLength: '3'
 
